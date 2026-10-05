@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HiggsfIld - Free AI Code Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>HiggsfIld</h1>
+        <p>Free AI Code Generator</p>
+      </header>
+
+      <main>
+        <label for="language">Language</label>
+        <select id="language">
+          <option value="JavaScript">JavaScript</option>
+          <option value="Python">Python</option>
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="Java">Java</option>
+          <option value="C++">C++</option>
+        </select>
+
+        <label for="prompt">What do you want to build?</label>
+        <textarea
+          id="prompt"
+          rows="6"
+          placeholder="Example: Create a login form in HTML and CSS"
+        ></textarea>
+
+        <button id="generateBtn">Generate Code</button>
+
+        <div id="loading" class="hidden">Generating...</div>
+        <div id="error" class="hidden error-box"></div>
+
+        <h3>Output</h3>
+        <pre id="output">Your generated code will appear here...</pre>
+
+        <button id="copyBtn" class="secondary">Copy</button>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

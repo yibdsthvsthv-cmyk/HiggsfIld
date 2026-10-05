@@ -1,0 +1,12 @@
+{
+  "name": "higgsfield",
+  "version": "1.0.0",
+  "description": "Free AI code generator using local Ollama",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
